@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col s12 m7">
+            <div class="card">
+                <div class="card-image">
+                    <img id="photo">
+                    <span class="name"></span>
+                </div>
+                <div class="short_descripton">
+                </div>
+                <div class="date"></div>
+                <div class="location"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function formarCard() {
+
+            // var currentName;
+            // var currentShortDescription;
+            // var currentDate;
+            // var currentLocation;
+            // var currentPhoto;
+            // var minhaLs = localStorage.getItem('id');
+
+            var currentName = localStorage.getItem('name');
+            var currenShortDescription = localStorage.getItem('short_description');
+            var currentDate = localStorage.getItem('data_event');
+            var currentLocation = localStorage.getItem('location');
+            var currentPhoto = localStorage.getItem('photo');
+
+
+            if (currentnName != null) {
+                for (let i = 0; i < localStorage.length; i++) {
+
+                    console.log(document.getElementById('name')[i].value = currentName);
+                    console.log(document.getElementById('short_description')[i].value = currentShortDescription);
+                    console.log(document.getElementById('data_event')[i].value = currentDate);
+                    console.log(document.getElementById('location')[i].value = currentLocation);
+                    console.log(document.getElementById('photo')[i].value = currentPhoto);
+                }
+            }
+            else {
+                console.log("Nenhum dado foi encontrado.");
+            }
+        }
+    </script>
+</body>
+
+</html>
